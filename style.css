@@ -1,0 +1,10 @@
+/* Basic CSS for the OKPanel site */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* You can add more global styles here if needed. */
+/* The existing Tailwind classes in index.html will provide most of the styling. */
