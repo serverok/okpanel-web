@@ -1,0 +1,17 @@
+<nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-black font-black">O</div>
+      <span class="font-bold tracking-tight text-xl">{{ site.name }}</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
+      <a href="{{ navBase }}#features" class="hover:text-white transition-colors">Features</a>
+      <a href="{{ navBase }}#install" class="hover:text-white transition-colors">Installation</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="{{ ctaHref }}" class="bg-white text-black px-6 py-1.5 rounded-full text-sm font-bold hover:bg-emerald-400 transition-colors">
+        Install
+      </a>
+    </div>
+  </div>
+</nav>
