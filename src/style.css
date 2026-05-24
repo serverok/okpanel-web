@@ -6,5 +6,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* You can add more global styles here if needed. */
-/* The existing Tailwind classes in index.html will provide most of the styling. */
+/* Hide scrollbar while keeping scroll functionality */
+.no-scrollbar {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Opera */
+}
