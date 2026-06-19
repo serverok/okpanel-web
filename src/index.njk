@@ -79,24 +79,24 @@ pageScripts: |
     </p>
 
     <!-- ── INSTALL COMMAND ── -->
-    <div class="relative max-w-2xl mx-auto mb-6">
+    <div class="relative max-w-3xl mx-auto mb-6">
       <!-- Glow halo -->
       <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-emerald-500/40 via-emerald-400/20 to-emerald-500/40 blur-lg opacity-70 pointer-events-none"></div>
 
       <div class="relative bg-[#0c0c0c] border border-emerald-500/40 rounded-2xl shadow-2xl">
         <!-- Command line -->
-        <div class="flex items-center gap-3 px-5 py-4 overflow-x-auto no-scrollbar">
+        <div class="flex items-center gap-3 px-5 py-4 min-w-0">
           <span class="text-emerald-500 font-mono font-bold text-base sm:text-lg select-none shrink-0">$</span>
-          <span id="install-cmd-1" class="font-mono text-base sm:text-lg text-white/90 tracking-tight whitespace-nowrap">curl -sSL https://cdn.okpanel.org/install.sh | bash</span>
+          <span id="install-cmd-1" class="font-mono text-base sm:text-lg text-white/90 tracking-tight whitespace-nowrap overflow-x-auto no-scrollbar flex-1 min-w-0">curl -sSL https://cdn.okpanel.org/install.sh | sudo bash</span>
           <button
-            class="shrink-0 ml-auto flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 hover:text-emerald-300 transition-all active:scale-95 copy-btn cursor-pointer text-xs font-semibold"
+            class="shrink-0 ml-3 flex items-center justify-center p-2 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 hover:text-emerald-300 transition-all active:scale-95 copy-btn cursor-pointer"
             data-target="install-cmd-1"
+            aria-label="Copy install command"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events:none;">
               <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
               <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
             </svg>
-            Copy
           </button>
         </div>
       </div>
@@ -113,15 +113,7 @@ pageScripts: |
       </a>
     </div>
 
-    <!-- Free install notice -->
-    <div class="inline-flex items-start gap-3 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-5 py-4 text-left max-w-xl mx-auto">
-      <svg class="shrink-0 mt-0.5 text-emerald-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
-      <p class="text-sm text-white/70 leading-relaxed">
-        <span class="font-bold text-white">Free Installation (Limited Time):</span>
-        Email <a href="/support/" class="text-emerald-400 hover:text-emerald-300">support@okpanel.org</a>
-        and we'll complete installation within 24 hours during working days.
-      </p>
-    </div>
+
   </div>
 
   <!-- Dashboard preview -->
@@ -231,7 +223,7 @@ pageScripts: |
           <p class="text-white/80">sudo -i && apt install -y curl</p>
           <p class="text-emerald-500 mt-4"># Run OKPanel Installer</p>
           <div class="flex items-center justify-between bg-white/5 p-3 rounded border border-white/10">
-            <span id="install-cmd-2" class="text-white/90 truncate mr-2">curl -sSL https://cdn.okpanel.org/install.sh | bash</span>
+            <span id="install-cmd-2" class="text-white/90 truncate mr-2">curl -sSL https://cdn.okpanel.org/install.sh | sudo bash</span>
             <button class="text-white/40 hover:text-white copy-btn" data-target="install-cmd-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" style="pointer-events: none;">
                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
