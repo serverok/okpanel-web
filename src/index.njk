@@ -6,7 +6,7 @@ keywords: linux control panel, nginx manager, mysql hosting, php-fpm control, we
 permalink: "/"
 navBase: ""
 ctaHref: "#install"
-wrapperClass: "min-h-screen bg-[#050505] text-white font-sans selection:bg-emerald-500/30"
+wrapperClass: "min-h-screen bg-white text-gray-900 font-sans selection:bg-emerald-500/30"
 pageHead: |
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://okpanel.org/" />
@@ -49,9 +49,9 @@ pageScripts: |
 <section class="relative pt-28 pb-24 overflow-hidden">
   <!-- Background glows -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">
-    <div class="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-emerald-500/8 blur-[140px] rounded-full"></div>
-    <div class="absolute top-[30%] left-[-10%] w-[35%] h-[40%] bg-blue-500/8 blur-[120px] rounded-full"></div>
-    <div class="absolute top-[20%] right-[-10%] w-[35%] h-[40%] bg-emerald-400/6 blur-[120px] rounded-full"></div>
+    <div class="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-emerald-400/15 blur-[140px] rounded-full"></div>
+    <div class="absolute top-[30%] left-[-10%] w-[35%] h-[40%] bg-blue-400/10 blur-[120px] rounded-full"></div>
+    <div class="absolute top-[20%] right-[-10%] w-[35%] h-[40%] bg-emerald-300/10 blur-[120px] rounded-full"></div>
   </div>
 
   <div class="max-w-5xl mx-auto px-6 relative text-center">
@@ -62,7 +62,7 @@ pageScripts: |
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         100% Free — No licence fees, ever
       </div>
-      <p class="text-white/40 text-xs uppercase tracking-widest font-semibold">Lightweight &bull; Linux Native</p>
+      <p class="text-gray-400 text-xs uppercase tracking-widest font-semibold">Lightweight &bull; Linux Native</p>
     </div>
 
     <!-- Heading -->
@@ -73,7 +73,7 @@ pageScripts: |
     </h1>
 
     <!-- Subheading -->
-    <p class="text-lg sm:text-xl text-white/55 mb-12 leading-relaxed max-w-2xl mx-auto">
+    <p class="text-lg sm:text-xl text-gray-500 mb-12 leading-relaxed max-w-2xl mx-auto">
       OKPanel is a minimalist, high-performance web hosting control panel designed for Linux.
       Manage Nginx, MySQL, and PHP-FPM with zero bloat.
     </p>
@@ -83,11 +83,11 @@ pageScripts: |
       <!-- Glow halo -->
       <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-emerald-500/40 via-emerald-400/20 to-emerald-500/40 blur-lg opacity-70 pointer-events-none"></div>
 
-      <div class="relative bg-[#0c0c0c] border border-emerald-500/40 rounded-2xl shadow-2xl">
+      <div class="relative bg-white border border-emerald-500/50 rounded-2xl shadow-xl">
         <!-- Command line -->
         <div class="flex items-center gap-3 px-5 py-4 min-w-0">
           <span class="text-emerald-500 font-mono font-bold text-base sm:text-lg select-none shrink-0">$</span>
-          <span id="install-cmd-1" class="font-mono text-base sm:text-lg text-white/90 tracking-tight whitespace-nowrap overflow-x-auto no-scrollbar flex-1 min-w-0">curl -sSL https://cdn.okpanel.org/install.sh | sudo bash</span>
+          <span id="install-cmd-1" class="font-mono text-base sm:text-lg text-gray-800 tracking-tight whitespace-nowrap overflow-x-auto no-scrollbar flex-1 min-w-0">curl -sSL https://cdn.okpanel.org/install.sh | sudo bash</span>
           <button
             class="shrink-0 ml-3 flex items-center justify-center p-2 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 hover:text-emerald-300 transition-all active:scale-95 copy-btn cursor-pointer"
             data-target="install-cmd-1"
@@ -108,7 +108,7 @@ pageScripts: |
       <a href="#install" class="bg-emerald-500 text-black px-8 py-4 rounded-xl font-black text-base hover:bg-emerald-400 transition-all hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-emerald-500/20">
         View Install Guide →
       </a>
-      <a href="#features" class="px-8 py-4 rounded-xl font-bold text-base border border-white/15 text-white/70 hover:border-white/30 hover:text-white transition-all">
+      <a href="#features" class="px-8 py-4 rounded-xl font-bold text-base border border-gray-300 text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-all">
         Explore Features
       </a>
     </div>
@@ -119,12 +119,12 @@ pageScripts: |
   <!-- Dashboard preview -->
   <div class="max-w-6xl mx-auto px-6 mt-24 relative">
     <div class="absolute inset-0 bg-emerald-500/15 blur-[100px] -z-10 rounded-full"></div>
-    <div class="bg-[#0A0A0A] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
-      <div class="h-10 bg-white/5 border-b border-white/5 flex items-center px-4 gap-1.5">
-        <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-        <div class="w-2.5 h-2.5 rounded-full bg-amber-500/50"></div>
-        <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/50"></div>
-        <div class="ml-4 text-[10px] uppercase tracking-widest font-bold text-white/20">OKPanel Dashboard Preview</div>
+    <div class="bg-gray-100 border border-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="h-10 bg-gray-200 border-b border-gray-300 flex items-center px-4 gap-1.5">
+        <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+        <div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+        <div class="ml-4 text-[10px] uppercase tracking-widest font-bold text-gray-400">OKPanel Dashboard Preview</div>
       </div>
       <img src="/images/okpanel-dashboard.webp"
         alt="OKPanel Control Panel Dashboard"
@@ -136,55 +136,109 @@ pageScripts: |
 </section>
 
 <!-- Features Grid -->
-<section id="features" class="py-32 border-t border-white/5">
+<section id="features" class="py-32 border-t border-gray-100">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="mb-20">
-      <h2 class="text-4xl font-black tracking-tighter mb-4">CORE FEATURES</h2>
-      <div class="h-1 w-20 bg-emerald-500"></div>
+    <div class="mb-20 text-center max-w-3xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl font-black tracking-tighter mb-4 text-gray-900">CORE FEATURES</h2>
+      <p class="text-gray-500 text-lg leading-relaxed">Everything you need to manage your server, with absolutely zero bloat.</p>
+      <div class="h-1.5 w-16 bg-emerald-500 mx-auto mt-6 rounded-full"></div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">Nginx Domain Management</h3>
-        <p class="text-white/50 text-sm leading-relaxed">Easily add and configure domains. OKPanel handles server blocks and SSL termination automatically.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="8" x="2" y="2" rx="2" ry="2"/>
+            <rect width="20" height="8" x="2" y="14" rx="2" ry="2"/>
+            <line x1="6" x2="6.01" y1="6" y2="6"/>
+            <line x1="6" x2="6.01" y1="18" y2="18"/>
+            <line x1="10" x2="10.01" y1="6" y2="6"/>
+            <line x1="10" x2="10.01" y1="18" y2="18"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">Nginx Domain Management</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Easily add and configure domains. OKPanel handles server blocks and SSL termination automatically.</p>
       </div>
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">MySQL Database Control</h3>
-        <p class="text-white/50 text-sm leading-relaxed">Create databases and users in seconds. Update passwords and manage permissions through a simple UI.</p>
+
+      <!-- Feature 2 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
+            <path d="M3 12A9 3 0 0 0 21 12"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">MySQL Database Control</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Create databases and users in seconds. Update passwords and manage permissions through a simple UI.</p>
       </div>
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">PHP-FPM Configuration</h3>
-        <p class="text-white/50 text-sm leading-relaxed">Switch between PHP versions (7.4 to 8.3) per domain with a single click. Optimized for performance.</p>
+
+      <!-- Feature 3 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="4" y1="21" y2="14"/>
+            <line x1="4" x2="4" y1="10" y2="3"/>
+            <line x1="12" x2="12" y1="21" y2="12"/>
+            <line x1="12" x2="12" y1="8" y2="3"/>
+            <line x1="20" x2="20" y1="21" y2="16"/>
+            <line x1="20" x2="20" y1="12" y2="3"/>
+            <line x1="2" x2="6" y1="14" y2="14"/>
+            <line x1="10" x2="14" y1="8" y2="8"/>
+            <line x1="18" x2="22" y1="16" y2="16"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">PHP-FPM Configuration</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Switch between PHP versions (7.4 to 8.3) per domain with a single click. Optimized for performance.</p>
       </div>
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">Security First</h3>
-        <p class="text-white/50 text-sm leading-relaxed">Automatic Let's Encrypt SSL provisioning and secure default configurations for all services.</p>
+
+      <!-- Feature 4 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l7-2a1 1 0 0 1 .48 0l7 2A1 1 0 0 1 20 6z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">Security First</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Automatic Let's Encrypt SSL provisioning and secure default configurations for all services.</p>
       </div>
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">Ultra Lightweight</h3>
-        <p class="text-white/50 text-sm leading-relaxed">No heavy dependencies. OKPanel runs with minimal memory footprint, perfect for small VPS instances.</p>
+
+      <!-- Feature 5 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">Ultra Lightweight</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">No heavy dependencies. OKPanel runs with minimal memory footprint, perfect for small VPS instances.</p>
       </div>
-      <div class="bg-black p-10 hover:bg-white/[0.02] transition-colors group">
-        <div class="mb-6 transform group-hover:scale-110 transition-transform duration-500"></div>
-        <h3 class="text-xl font-bold mb-3 tracking-tight">Modular Architecture</h3>
-        <p class="text-white/50 text-sm leading-relaxed">Built to scale. Email management and advanced monitoring modules are currently in development.</p>
+
+      <!-- Feature 6 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 hover:border-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/[0.03] hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-10 5 10 5 10-5-10-5Z"/>
+            <path d="m2 17 10 5 10-5"/>
+            <path d="m2 12 10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 tracking-tight text-gray-900">Modular Architecture</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Built to scale. Email management and advanced monitoring modules are currently in development.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Installation Guide -->
-<section id="install" class="py-32 bg-white/5">
+<section id="install" class="py-32 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div>
         <h2 class="text-4xl font-black tracking-tighter mb-6">INSTALLATION</h2>
-        <p class="text-white/60 mb-8 leading-relaxed">
+        <p class="text-gray-500 mb-8 leading-relaxed">
           OKPanel is designed to be installed on a fresh Ubuntu or Debian server.
           Our automated script handles all dependencies including Nginx, MariaDB, and PHP.
         </p>
@@ -194,35 +248,35 @@ pageScripts: |
             <span class="text-emerald-500 font-black text-xl opacity-50">01</span>
             <div>
               <h4 class="font-bold text-lg mb-1">Prepare your server</h4>
-              <p class="text-white/40 text-sm">Use a fresh Ubuntu 22.04 or 24.04 installation.</p>
+              <p class="text-gray-400 text-sm">Use a fresh Ubuntu 22.04 or 24.04 installation.</p>
             </div>
           </div>
           <div class="flex gap-6">
             <span class="text-emerald-500 font-black text-xl opacity-50">02</span>
             <div>
               <h4 class="font-bold text-lg mb-1">Run the installer</h4>
-              <p class="text-white/40 text-sm">Execute the one-line command to begin the automated setup.</p>
+              <p class="text-gray-400 text-sm">Execute the one-line command to begin the automated setup.</p>
             </div>
           </div>
           <div class="flex gap-6">
             <span class="text-emerald-500 font-black text-xl opacity-50">03</span>
             <div>
               <h4 class="font-bold text-lg mb-1">Access OKPanel</h4>
-              <p class="text-white/40 text-sm">Once installation completes, credentials are displayed. Access OKPanel at https://your-server-ip:2222</p>
+              <p class="text-gray-400 text-sm">Once installation completes, credentials are displayed. Access OKPanel at https://your-server-ip:2222</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="bg-black border border-white/10 rounded-2xl p-8 font-mono text-sm shadow-2xl">
-        <div class="flex items-center gap-2 mb-6 text-white/40">
+      <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 font-mono text-sm shadow-2xl">
+        <div class="flex items-center gap-2 mb-6 text-white/50">
           <span>Quick Install</span>
         </div>
         <div class="space-y-2">
           <p class="text-emerald-500"># Become root and install curl</p>
-          <p class="text-white/80">sudo -i && apt install -y curl</p>
+          <p class="text-white/80">sudo -i &amp;&amp; apt install -y curl</p>
           <p class="text-emerald-500 mt-4"># Run OKPanel Installer</p>
-          <div class="flex items-center justify-between bg-white/5 p-3 rounded border border-white/10">
+          <div class="flex items-center justify-between bg-white/10 p-3 rounded border border-white/20">
             <span id="install-cmd-2" class="text-white/90 truncate mr-2">curl -sSL https://cdn.okpanel.org/install.sh | sudo bash</span>
             <button class="text-white/40 hover:text-white copy-btn" data-target="install-cmd-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" style="pointer-events: none;">
@@ -232,7 +286,7 @@ pageScripts: |
             </button>
           </div>
           <p class="text-emerald-500 mt-4"># Credentials auto-generated on completion</p>
-          <p class="text-white/40">Username: admin / Password: [auto-generated]</p>
+          <p class="text-white/50">Username: admin / Password: [auto-generated]</p>
         </div>
       </div>
     </div>

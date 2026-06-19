@@ -1,14 +1,27 @@
-<footer class="py-20 border-t border-white/5">
+<footer class="py-20 border-t border-gray-100">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
     <div class="flex items-center gap-2">
-      <div class="w-6 h-6 bg-emerald-500 rounded flex items-center justify-center text-black font-black text-xs">O</div>
-      <span class="font-bold tracking-tight">{{ site.name }}</span>
+      <svg class="w-6 h-6 shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10b981" />
+            <stop offset="100%" stop-color="#059669" />
+          </linearGradient>
+        </defs>
+        <!-- The 'O' ring -->
+        <circle cx="50" cy="50" r="36" stroke="url(#logo-grad-footer)" stroke-width="12" />
+        <!-- The 'K' Halo/Mask (White background cut-out) -->
+        <path d="M40 25V75M40 50L68 22M40 50L68 78" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+        <!-- The 'K' foreground stroke -->
+        <path d="M40 25V75M40 50L68 22M40 50L68 78" stroke="#111827" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="font-bold tracking-tight text-gray-900">{{ site.name }}</span>
     </div>
-    <p class="text-white/40 text-sm">© {{ site.year }} {{ site.name }}. All rights reserved. {{ site.tagline }}</p>
-    <div class="flex gap-6 text-white/40 text-sm font-medium">
-      <a href="/privacy/" class="hover:text-white">Privacy</a>
-      <a href="/terms/" class="hover:text-white">Terms</a>
-      <a href="/support/" class="hover:text-white">Support</a>
+    <p class="text-gray-400 text-sm">© {{ site.year }} {{ site.name }}. All rights reserved. {{ site.tagline }}</p>
+    <div class="flex gap-6 text-gray-400 text-sm font-medium">
+      <a href="/privacy/" class="hover:text-gray-900">Privacy</a>
+      <a href="/terms/" class="hover:text-gray-900">Terms</a>
+      <a href="/support/" class="hover:text-gray-900">Support</a>
     </div>
   </div>
 </footer>
