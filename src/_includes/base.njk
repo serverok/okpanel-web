@@ -12,6 +12,12 @@
     <title>{{ title }}</title>
     {% if description %}<meta name="description" content="{{ description }}" />{% endif %}
     {% if keywords %}<meta name="keywords" content="{{ keywords }}" />{% endif %}
+    <meta property="og:site_name" content="OkPanel" />
+    <meta property="og:image" content="https://okpanel.org/images/okpanel-social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://okpanel.org/images/okpanel-social-card.png" />
     {% if pageHead %}{{ pageHead | safe }}{% endif %}
     <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>

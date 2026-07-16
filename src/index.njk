@@ -12,10 +12,33 @@ pageHead: |
   <meta property="og:url" content="https://okpanel.org/" />
   <meta property="og:title" content="OkPanel | Lightweight Linux Web Hosting Control Panel" />
   <meta property="og:description" content="Websites, Node.js apps, email, databases, DNS, SSL, backups, and security &mdash; one fast, free control panel for Linux servers." />
-  <meta property="og:image" content="https://okpanel.org/images/okpanel-manage-site.webp" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="OkPanel | Lightweight Linux Web Hosting Control Panel" />
-  <meta property="twitter:description" content="Websites, Node.js apps, email, databases, DNS, SSL, backups, and security &mdash; one fast, free control panel for Linux servers." />
+  <meta name="twitter:title" content="OkPanel | Lightweight Linux Web Hosting Control Panel" />
+  <meta name="twitter:description" content="Websites, Node.js apps, email, databases, DNS, SSL, backups, and security &mdash; one fast, free control panel for Linux servers." />
+  <link rel="canonical" href="https://okpanel.org/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OkPanel",
+    "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "Web Hosting Control Panel",
+    "operatingSystem": "Ubuntu 22.04, Ubuntu 24.04",
+    "url": "https://okpanel.org/",
+    "image": "https://okpanel.org/images/okpanel-social-card.png",
+    "description": "OkPanel is a lightweight, free web hosting control panel for Linux. Manage Nginx, PHP, MySQL, Node.js apps, email, DNS, SSL, backups, and firewall from one fast single-binary panel.",
+    "softwareRequirements": "Ubuntu 22.04 or 24.04, 64-bit (amd64/arm64)",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ServerOK",
+      "url": "https://okpanel.org/"
+    }
+  }
+  </script>
 pageScripts: |
   <script>
     document.querySelectorAll('.copy-btn').forEach(button => {
@@ -177,6 +200,7 @@ pageScripts: |
       <img src="/images/okpanel-manage-site.webp"
         alt="OkPanel site management tools — MySQL, Node.js apps, email, DNS, SSL, backups and more"
         class="w-full opacity-100 transition-all duration-700 object-cover"
+        width="1515" height="720" decoding="async"
         referrerpolicy="no-referrer"
       />
     </div>
@@ -381,6 +405,7 @@ pageScripts: |
         <img src="/images/okpanel-domains.webp"
           alt="OkPanel domains list showing every website with owner, SSL status, disk usage and a manage button"
           class="w-full object-cover"
+          width="1511" height="792" loading="lazy" decoding="async"
           referrerpolicy="no-referrer"
         />
       </div>
