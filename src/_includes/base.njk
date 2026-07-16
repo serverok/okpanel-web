@@ -17,7 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="{{ bodyClass | default('') }}">
-    <div class="{{ wrapperClass | default('min-h-screen bg-white text-gray-900 font-sans selection:bg-emerald-500/30') }}">
+    <div class="{{ wrapperClass | default('min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-600/30') }}">
       {% include "nav.njk" %}
       {{ content | safe }}
       {% include "footer.njk" %}
